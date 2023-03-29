@@ -14,3 +14,12 @@ then
 else
     echo "The largest number is" $num3
 fi
+
+//
+Enter Num1
+10
+Enter Num2
+80
+Enter Num3
+16
+The largest number is 80
