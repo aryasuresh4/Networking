@@ -21,3 +21,28 @@ echo "$mun"
 fi 
 done
 echo -e "\n There are $count number of prime numbers"
+
+//
+Enter the lower limit,greater than 1
+2
+Enter the upper limit
+50
+The prime numbers are:
+2
+3
+5
+7
+11
+13
+17
+19
+23
+29
+31
+37
+41
+43
+47
+
+ There are 15 number of prime numbers
+
