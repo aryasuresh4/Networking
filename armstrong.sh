@@ -17,3 +17,8 @@ echo "It is an Armstrong Number."
 else
 echo "It is not an Armstrong Number."
 fi
+
+//
+Enter a number: 
+153
+It is an Armstrong Number.
