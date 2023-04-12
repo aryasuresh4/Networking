@@ -28,3 +28,19 @@ echo "Third Class"
 else
 echo "Fail"
 fi
+
+//
+Name of student:
+Arya
+student registration number:
+2302
+Enter Marks obtained in DFS: 
+90
+Enter marks obtained in OOP: 
+85
+Enter marks obtained in OS: 
+88
+Total: 263
+Average: 87
+First Class
+
