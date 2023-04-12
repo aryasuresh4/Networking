@@ -28,3 +28,19 @@ echo "Grade = P"
 else
 echo "Grade = F"
 fi
+
+//
+Name of student:
+Arya
+student registration number:
+2302
+Enter Marks obtained in DFS: 
+90
+Enter marks obtained in OOP: 
+88
+Enter marks obtained in OS: 
+96
+Total: 274
+Average: 91
+Grade = S
+
