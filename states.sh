@@ -30,3 +30,14 @@ case $state in
     ;;
 esac
 
+// bash states.sh
+Enter the name of an Indian state:
+kerala
+Main Language: Malayalam
+
+
+
+bash states.sh
+Enter the name of an Indian state:
+Goa
+Main Language: Unknown
