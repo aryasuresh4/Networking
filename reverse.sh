@@ -1,3 +1,4 @@
+#!/bin/bash
 echo enter n
 read n
 num=0
