@@ -1,48 +1,25 @@
-low=1
+#!/bin/bash
+is_prime() {
+    if [ $1 -lt 2 ]; then
+        return 1
+    fi
+
+    for ((i = 2; i <= $1 / 2; i++)); do
+        if [ $(( $1 % i )) -eq 0 ]; then
+            return 1
+        fi
+    done
+    return 0
+}
+read -p "Enter the starting number: " start
+read -p "Enter the ending number: " end
 count=0
-
-while [ $low -eq 1 ]
-do
-echo "Enter the lower limit,greater than 1"
-read low
+echo "Prime numbers between $start and $end:"
+for ((num = start; num <= end; num++)); do
+    if is_prime $num; then
+        ((count++))
+        echo $num
+    fi
 done
-
-echo "Enter the upper limit"
-read upper
-echo "The prime numbers are:"
-for mun in `seq $low $upper`
-do
-ret=$(factor $mun | grep $mun | cut -d ":" -f 2 | cut -d " " -f 2)
-
-if [ "$ret" -eq "$mun" ] 
-then 
-echo "$mun" 
-((count++))
-fi 
-done
-echo -e "\n There are $count number of prime numbers"
-
-//
-Enter the lower limit,greater than 1
-2
-Enter the upper limit
-50
-The prime numbers are:
-2
-3
-5
-7
-11
-13
-17
-19
-23
-29
-31
-37
-41
-43
-47
-
- There are 15 number of prime numbers
+echo "Number of prime numbers between $start and $end: $count"
 
